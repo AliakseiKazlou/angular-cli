@@ -1,0 +1,51 @@
+<div class="navbar navbar-default navbar-fixed-top main-header">
+    <a routerLink="/" class="header-logo-href hidden-xs" *ngIf="!smallMode">
+        <span class="header-logo-top">TIME FOR YOU</span>
+        <span class="header-logo-down">DOMESTIC &nbsp;&nbsp; CLEANING</span>
+    </a>
+    <div class="control-area">
+        <div class="toggle-holder" (click)="hideLeftBar()">
+            <button type="button" class="navbar-toggle visible-xs visible-sm" data-toggle="offcanvas"
+                    data-target=".navmenu" >
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <button type="button" class="navbar-toggle sizer visible-lg visible-md ">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="search-block">
+            <div class="input-group">
+                <input type="text" class="form-control input-sm search search-header" placeholder="Search">
+                <span class="glyphicon glyphicon-search form-control-feedback"></span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="control-area-user" dropdown dropdown-append-to-body>
+        <a href="/timeforyou/pages/manager/index.html" class="btn btn-control btn-blue lg-btn not-inverse">Back to manager</a>
+        <a href="#" class="dropdown-toggle user-toggle" dropdownToggle >
+            <img src="../../../assets/img/icons/icon_user_placeholder_sm.png" class="user-image" alt="User Image">
+            <span class="hidden-xs">Test Franchsee </span>
+            <i class="icon-after icon-arrow-down"></i>
+        </a>
+        <div class="box-user dropdown-menu pull-right">
+            <div class="box-body bg-blue">
+                <div class="image-block-middle">
+                    <img src="../../../assets/img/icons/icon_user_placeholder_lg.png" class="user-image-lg" alt="User Image">
+                </div>
+                <div class="image-block-bottom">
+                    help@tfyhub.com
+                </div>
+            </div>
+            <div class="box-footer">
+                <a href="#" class="btn btn-control btn-blue sm-btn">Sign out</a>
+                <a href="edit-profile.html" class="btn btn-control btn-blue full sm-btn pull-right">Edit profile</a>
+            </div>
+        </div>
+    </div>
+</div>

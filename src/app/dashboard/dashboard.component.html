@@ -1,0 +1,11 @@
+<div class="wrapper" [class.large]="smallMode">
+
+  <my-header *ngIf="showFrame" [smallMode]="smallMode" (onModeChange)="onModeChange($event)"></my-header>
+
+  <my-left-bar *ngIf="showFrame" [smallMode]="smallMode"></my-left-bar>
+
+  <router-outlet></router-outlet>
+
+  <my-footer *ngIf="showFrame"></my-footer>
+
+</div>
