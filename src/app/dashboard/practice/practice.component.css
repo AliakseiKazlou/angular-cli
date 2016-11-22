@@ -1,14 +1,15 @@
 .main-text {
-    white-space: pre-wrap;
-    padding: 0 100px;
-    width: 100%;
+  white-space: pre-wrap;
+  padding: 0 100px;
+  width: 100%;
 }
 .main-text img {
-    width: 550px;
+  width: 550px;
 }
-.image-holder {
-    text-align: center;
+.img-table {
+  width: 100%;
 }
-.custom-image {
-
+.img-table td{
+  text-align: center;
+  width: 50%;
 }
