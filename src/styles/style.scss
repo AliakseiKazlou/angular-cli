@@ -2953,7 +2953,11 @@ textarea {
   }
 }
 
-
+.spinner {
+  position: absolute;
+  top: 45%;
+  left: 48%;
+}
 .spinner > div {
   width: 18px;
   height: 18px;
